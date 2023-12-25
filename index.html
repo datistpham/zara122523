@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>Abuabi</title>
+    <meta name="author" content="Alvaro Trigo Lopez" />
+    <meta
+      name="description"
+      content="fullPage full-screen navigation and sections control menu."
+    />
+    <meta
+      name="keywords"
+      content="fullpage,jquery,demo,scrollbar,scroll,bar,fullscreen,navigation,control arrows, dots"
+    />
+    <meta name="Resource-type" content="Document" />
+
+    <link rel="stylesheet" type="text/css" href="./dist/fullpage.css" />
+    <link rel="stylesheet" type="text/css" href="./examples/examples.css" />
+    <style>
+      /* Style for our header texts
+	* --------------------------------------- */
+      h1 {
+        font-size: 5em;
+        font-family: arial, helvetica;
+        color: #fff;
+        margin: 0;
+      }
+      .intro p {
+        color: #fff;
+      }
+
+      /* Centered texts in each section
+	* --------------------------------------- */
+      .section {
+        text-align: center;
+      }
+
+      /* Bottom menu
+	* --------------------------------------- */
+      #infoMenu li a {
+        color: #fff;
+      }
+
+      #header-0 {
+        padding: 30px;
+      }
+      .title-header {
+        align-self: flex-end;
+        font-size: 60px;
+        font-weight: 500;
+        color: #fff;
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+          Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue",
+          sans-serif;
+      }
+
+      .c-flex-center {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      .c-flex-h {
+        display: flex;
+      }
+
+      .intro {
+        height: 100vh;
+      }
+
+      #page-1 {
+        position: relative;
+        height: 100vh;
+        background-image: url("./examples/imgs/banner-1.jpg");
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+      }
+
+	  #c-1, #c-2, #c-3, #c-4 {
+		height: 100vh;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+	  }
+
+	  #c-1 {
+		background-image: url("https://static.zara.net/photos///contents/mkt/spots/aw23-north-kids-girl/subhome-xmedia-51//w/1205/IMAGE-landscape-default-fill-6999d45d-ae06-4b90-b5d1-fd7d292c3c51-default_0.jpg?ts=1703248188221");
+	  }
+
+	  #c-2 {
+		background-image: url("https://static.zara.net/photos///contents/mkt/spots/aw23-beauty-north-new/subhome-xmedia-51//w/1205/IMAGE-landscape-default-fill-a229be51-2b56-4dd4-b0c5-ea90ae0e2a0b-default_0.jpg?ts=1703003487979");
+	  }
+
+	  #c-3 {
+		background-image: url("https://static.zara.net/photos///contents/mkt/spots/aw23-beauty-north-lips/subhome-xmedia-48//w/1205/IMAGE-landscape-default-fill-240c70e8-40dd-4385-bb8f-808ed7acc424-default_0.jpg?ts=1703058322158");
+	  }
+
+	  #c-4 {
+		background-image: url("https://static.zara.net/photos///contents/mkt/spots/aw23-beauty-nails/subhome-xmedia-51//w/1615/IMAGE-landscape-default-fill-5f16b0cd-c197-4f16-a397-cc49af10cde1-default_0.jpg?ts=1703001573061");
+	  }
+
+      #footer-1 {
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        margin-right: 30px;
+        margin-bottom: 30px;
+      }
+    </style>
+
+    <!--[if IE]>
+      <script type="text/javascript">
+        fp - overflow;
+        var console = { log: function () {} };
+      </script>
+    <![endif]-->
+  </head>
+  <body>
+    <div id="fullpage">
+      <div class="section" id="section0">
+        <div class="intro">
+          <div id="page-1">
+            <header id="header-0">
+              <div
+                style="
+                  display: flex;
+                  justify-content: space-between;
+                  align-items: center;
+                "
+              >
+                <div class="c-flex-h">
+                  <div class="c-flex-center">
+                    <svg
+                      style="fill: #fff"
+                      xmlns="http://www.w3.org/2000/svg"
+                      height="32"
+                      width="32"
+                      viewBox="0 0 448 512"
+                    >
+                      <!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2023 Fonticons, Inc.-->
+                      <path
+                        d="M0 96C0 78.3 14.3 64 32 64H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32H32c-17.7 0-32-14.3-32-32s14.3-32 32-32H416c17.7 0 32 14.3 32 32z"
+                      />
+                    </svg>
+                  </div>
+                  <div style="margin-left: 20px">
+                    <div class="title-header">ABUABI</div>
+                    <div
+                      style="
+                        text-transform: uppercase;
+                        color: #fff;
+                        font-size: 14px;
+                        text-align: left;
+                      "
+                    >
+                      New in
+                    </div>
+                  </div>
+                </div>
+                <div class="c-flex-h">
+                  <div style="color: #fff; font-size: 16px">
+                    Where to find us
+                  </div>
+                  <div style="color: #fff; font-size: 16px; margin-left: 30px">
+                    VN
+                  </div>
+                </div>
+              </div>
+            </header>
+            <div id="footer-1">
+              <div style="font-size: 32px; color: #fff; font-weight: 100">
+                Shopping bag (1)
+              </div>
+              <div
+                style="
+                  border: 1px solid #fff;
+                  padding: 10px;
+                  padding-left: 100px;
+                  text-align: right;
+                  color: #fff;
+                  font-size: 32px;
+                  margin-top: 20px;
+                "
+              >
+                Search
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="section" id="section1">
+        <div class="slide" id="slide1">
+          <div class="intro">
+			<div id="c-1"></div>
+		  </div>
+        </div>
+
+        <div class="slide" id="slide2">
+          <div class="intro">
+			<div id="c-2"></div>
+		  </div>
+        </div>
+        <div class="slide" id="slide2">
+          <div class="intro">
+			<div id="c-3"></div>
+		  </div>
+        </div>
+      </div>
+      <div class="section" id="section2">
+        <div class="intro">
+          <div id="c-4"></div>
+        </div>
+      </div>
+    </div>
+
+    <script type="text/javascript" src="./dist/fullpage.js"></script>
+    <!-- <script type="text/javascript" src="examples.js"></script> -->
+
+    <script type="text/javascript">
+      var myFullpage = new fullpage("#fullpage", {
+        anchors: ["firstPage", "secondPage", "3rdPage"],
+        sectionsColor: ["#C63D0F", "#1BBC9B", "#7E8F7C"],
+        scrollBar: true,
+      });
+    </script>
+  </body>
+</html>
